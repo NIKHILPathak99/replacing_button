@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i love u</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+       background-image: linear-gradient(rgba(95, 87, 87, 0.484),rgba(103, 2, 2, 0.52)), url(./love-3497782_1280.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+    }
+    div{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    h1{
+        text-transform: capitalize;
+        color: rgba(10, 10, 10, 0.727);
+        -webkit-text-stroke: 1px rgba(9, 9, 9, 0.565);   
+    }
+    p{
+        margin: 10%;
+        text-transform: capitalize;
+        color: rgb(237, 216, 21);
+        -webkit-text-stroke: 1px rgba(9, 9, 9, 0.565);
+        font-size:x-large; 
+    }
+    button{
+        transform: translate(-50%, -50%);
+        margin-top: 15%;
+        margin-left: 25%;
+        padding-inline: 4%;
+        background-color: rgba(255, 3, 3, 0.714);
+        border: 2px solid rgb(131, 125, 125);
+    }
+    #no{
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: 1s;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<body>
+    <div>
+        <h1>do you love me ?</h1>
+        <p id="para"></p>
+        <button onclick="f1()"><a href="#">yes</a></button>
+        <button id="no" onmouseover="f2()"><a href="">no</a></button>
+    </div>
+
+<script>
+    function f2(){
+        var a = document.getElementById('no')
+        var x = parseInt(Math.random()*500);
+        var y = parseInt(Math.random()*100);
+        a.style.top= y + "px";
+        a.style.left= x + "px";
+    }
+    function f1(){
+        document.getElementById("para").innerHTML= "i love you too";
+    }
+</script>
+
+</body>
+</html>
